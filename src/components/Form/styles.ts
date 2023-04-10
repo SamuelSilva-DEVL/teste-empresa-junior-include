@@ -3,7 +3,15 @@ import styled from "styled-components";
 export const SectionFormulario = styled.div`
   width: 100%;
   max-height: 100%;
+  margin-top: 60px;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+`
+
+export const Formulario = styled.form`
   display: flex;
   align-items: center;
   justify-content: center;
