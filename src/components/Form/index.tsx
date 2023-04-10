@@ -30,27 +30,27 @@ export function Form(){
         <F.SectionInputLabel>
           <F.Label>Nome da empresa</F.Label>
           <F.Input type='text' {...register("nomeEmpresa")}/>
-          {errors.nomeEmpresa?.message && <p style={{color: 'red'}}>{errors.nomeEmpresa.message}</p>}
+          {errors.nomeEmpresa?.message && <p style={{color: 'red', marginLeft: "10px"}}>{errors.nomeEmpresa.message}</p>}
 
           <F.Label>Telefone</F.Label>
           <F.Input type='text' {...register("telefone")}/>
-          {errors.telefone?.message && <p style={{color: 'red'}}>{errors.telefone.message}</p>}
+          {errors.telefone?.message && <p style={{color: 'red', marginLeft: "10px"}}>{errors.telefone.message}</p>}
 
           <F.Label>Email</F.Label>
           <F.Input type='email' {...register("email")}/>
-          {errors.email?.message && <p style={{color: 'red'}}>{errors.email.message}</p>}
+          {errors.email?.message && <p style={{color: 'red', marginLeft: "10px"}}>{errors.email.message}</p>}
 
           <F.Label>UF</F.Label>
           <F.Input type='text' {...register("uf")}/>
-          {errors.uf?.message && <p style={{color: 'red'}}>{errors.uf.message}</p>}
+          {errors.uf?.message && <p style={{color: 'red', marginLeft: "10px"}}>{errors.uf.message}</p>}
 
           <F.Label>Cidade</F.Label>
           <F.Input type='text' {...register("cidade")}/>
-          {errors.cidade?.message && <p style={{color: 'red'}}>{errors.cidade.message}</p>}
+          {errors.cidade?.message && <p style={{color: 'red', marginLeft: "10px"}}>{errors.cidade.message}</p>}
 
           <F.Label>CEP</F.Label>
           <F.Input type='text' {...register("cep")}/>
-          {errors.cep?.message && <p style={{color: 'red'}}>{errors.cep.message}</p>}
+          {errors.cep?.message && <p style={{color: 'red', marginLeft: "10px"}}>{errors.cep.message}</p>}
         </F.SectionInputLabel>
 
         <F.Line />
@@ -58,18 +58,18 @@ export function Form(){
         <F.SectionInputLabel>
           <F.Label>Ramo(s) de atividade</F.Label>
           <F.Input type='text' {...register("ramoAtividade")}/>
-          {errors.ramoAtividade?.message && <p style={{color: 'red'}}>{errors.ramoAtividade.message}</p>}
+          {errors.ramoAtividade?.message && <p style={{color: 'red', marginLeft: "10px"}}>{errors.ramoAtividade.message}</p>}
 
           <F.Label>Detalhe a atividade</F.Label>
           <F.Input type='text' {...register("detalheAtividade")}/>
-          {errors.detalheAtividade?.message && <p style={{color: 'red'}}>{errors.detalheAtividade.message}</p>}
+          {errors.detalheAtividade?.message && <p style={{color: 'red', marginLeft: "10px"}}>{errors.detalheAtividade.message}</p>}
 
           <F.Label>Serviços desejados</F.Label>
           <F.InputBox type='text' {...register("servicosDesejados")}/>
-          {errors.servicosDesejados?.message && <p style={{color: 'red'}}>{errors.servicosDesejados.message}</p>}
+          {errors.servicosDesejados?.message && <p style={{color: 'red', marginLeft: "10px"}}>{errors.servicosDesejados.message}</p>}
         </F.SectionInputLabel>
 
-        <input type="submit" style={{opacity: "0"}}/>
+        <input type="submit" style={{display: "none"}}/>
       </F.Formulario>
     </F.SectionFormulario>
   )

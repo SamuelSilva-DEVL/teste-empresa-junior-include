@@ -3,7 +3,7 @@ import * as yup from 'yup'
 const FormSchema = yup.object().shape({
   nomeEmpresa: yup
     .string()
-    .min(3, "Nome da empresa deve conter no minimo 3 caracteres")
+    .min(3, "nome da empresa deve conter no minimo 3 caracteres")
     .required("campo obrigatório"),
   telefone: yup
     .string().required("campo obrigatório"),

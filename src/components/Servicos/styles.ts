@@ -9,6 +9,11 @@ export const ContainerServicos = styled.div`
   align-items: center;
   flex-wrap: wrap;
   gap: 50px;
+
+  @media (max-width: ${props => props.theme.breakpoints.sm}){
+    margin-top: 65px;
+    margin-bottom: 45px;
+  }
 `
 
 export const CardContainer = styled.div`
@@ -42,6 +47,11 @@ export const CardContainer = styled.div`
   img{
     width: 50px;
     height: 50px;
+  }
+
+  @media (max-width: ${props => props.theme.breakpoints.sm}){
+    width: 350px;
+    height: 350px;
   }
 `
 

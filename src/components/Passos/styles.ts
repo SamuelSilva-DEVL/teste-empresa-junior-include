@@ -8,14 +8,22 @@ export const SectionPassos = styled.div`
   align-items: center;
   justify-content: center;
   gap: 20px;
-
   color: #fff;
+
+  @media (max-width: ${props => props.theme.breakpoints.sm}){
+    flex-direction: row;
+    margin: 10px;
+  }
 `
 
 export const ContainerPasso = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: ${props => props.theme.breakpoints.sm}){
+    flex-direction: column;
+  }
 `
 
 export const ContainerInformacoes = styled.div`
@@ -29,6 +37,14 @@ export const ContainerInformacoes = styled.div`
     height: 57px;
     font-size: 16px;
     text-align: center;
+  }
+
+  @media (max-width: ${props => props.theme.breakpoints.sm}){
+    flex-direction: column;
+
+    p{
+      margin-bottom: 5px;
+    }
   }
 `
 
@@ -51,4 +67,9 @@ export const Line = styled.div`
   width: 224px;
   height: 1px;
   background: #FFFF;
+
+  @media (max-width: ${props => props.theme.breakpoints.sm}){
+    width: 1px;
+    height: 20px;
+  }
 `

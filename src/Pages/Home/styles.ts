@@ -20,7 +20,6 @@ export const Titlle = styled.p`
 
 export const SectionDefault = styled.div<SectionDefaultProps>`
   width: 100%;
-  /* height: 100vh; */
   min-height: 100vh;
   position: relative;
 
@@ -78,6 +77,21 @@ export const ContainerHome = styled.div`
     color: #ffff;
     text-decoration: none;
   }
+
+  @media (max-width: ${props => props.theme.breakpoints.sm}){
+    h1{
+      font-size: 37px;
+    }
+
+    p{
+      font-size: 31px;
+    }
+
+    a{
+      width: 350px;
+      font-size: 28px;
+    }
+  }
 `
 
 export const SectionPrincipios = styled.div`
@@ -106,6 +120,11 @@ export const SectionClientes = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: ${props => props.theme.breakpoints.sm}){
+    height: 100vh;
+    align-items: start;
+  }
 `
 
 export const SectionBeneficios = styled.div`
@@ -126,6 +145,10 @@ export const SectionPassos = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: ${props => props.theme.breakpoints.sm}){
+    height: 100%;
+  }
 `
 
 export const ContainerSobreNos = styled.div`
@@ -146,6 +169,18 @@ export const ContainerSobreNos = styled.div`
     text-align: justify;
 
     color: #FFFF;
+  }
+
+  @media (max-width: ${props => props.theme.breakpoints.sm}){
+    height: 100%;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+
+    p{
+      width: 300px;
+    }
   }
 `
 
