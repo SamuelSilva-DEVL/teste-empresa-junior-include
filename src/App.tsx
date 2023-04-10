@@ -2,6 +2,9 @@ import { ThemeProvider } from 'styled-components'
 import { defaultTheme } from './styles/Themes/defaultTheme'
 import { Home } from './Pages/Home'
 import { GlobalStyle } from './styles/global'
+import { ToastContainer } from 'react-toastify'
+
+import 'react-toastify/dist/ReactToastify.min.css'
 
 function App() {
 
@@ -10,6 +13,7 @@ function App() {
       <Home />
 
       <GlobalStyle />
+      <ToastContainer />
     </ThemeProvider>
   )
 }
