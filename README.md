@@ -26,7 +26,11 @@ Tecnologias utilizadas;
 Protótipo
 
 ![w:160](./src/imgs/paginaHome.png)
+
 ![w:160](./src/imgs/paginaServicos.png)
+
 ![w:160](./src/imgs/paginaSobreNos.png)
+
 ![w:160](./src/imgs/paginaClientes.png)
+
 ![w:160](./src/imgs/paginaContatos.png)
