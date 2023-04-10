@@ -20,8 +20,8 @@ export const Titlle = styled.p`
 
 export const SectionDefault = styled.div<SectionDefaultProps>`
   width: 100%;
-  height: 100vh;
-  min-height: 100%;
+  /* height: 100vh; */
+  min-height: 100vh;
   position: relative;
 
   display: flex;
@@ -54,9 +54,11 @@ export const ContainerHome = styled.div`
 
   h1{
     font-size: 47px;
+    text-align: center;
   }
 
   p{
+    text-align: center;
     margin-top: 12px;
     font-size: 41px;
     font-family: ${props => props.theme.font.bookAntiqua};
@@ -88,7 +90,7 @@ export const SectionPrincipios = styled.div`
 
 export const SectionOrçamento = styled.div`
   width: 100%;
-  height: 600px;
+  height: 700px;
   position: relative;
 
   display: flex;

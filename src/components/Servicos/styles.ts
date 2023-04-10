@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ContainerServicos = styled.div`
   width: 1300px;
-  height: 550px;
+  height: 100%;
 
   display: flex;
   justify-content: center;
